@@ -1,0 +1,59 @@
+My Daily Update :
+Yesterday(29-12-2025): 
+Revised the Besics of Power Bi: 1 Hour
+Created a basic Dashboard to understand visualization features: 1 hour
+Created a Dashboard to understand the Column and Bar charts: 1 hour
+Created a Basic dashboard to understand Line and Area Charts: 1 Hour 
+Understand the Power bi topics(Cardinality, Cross Filtering, Star VS SnowFlake Schema): 1.5 Hours
+Basic DAX(Commom DAX functions and time intelligence DAX functions): 1.5 Hours
+
+
+Today:
+Creating Interactions in Power BI(Slicers,Filters,Drill Down, Bookmarks) : 2 hour
+Power Bi Layout and Formatting : 2 hour
+Create a dashboard to understand the the topics in practical: 3 hours
+
+
+
+🎚 3. Filters Pane
+The Filters Pane controls how data is filtered at different report levels.
+
+Filter Types:
+
+Visual-level Filters: Apply filters to a single chart or visual.
+Page-level Filters: Apply filters across all visuals on the current report page.
+Report-level Filters: Affect the entire report across multiple pages.
+
+
+Split Columns
+
+
+
+
+
+
+
+
+ Cross Filtering Direction:
+ Example: Single vs. Both
+Scenario: You have a Customers table and an Orders table, linked by Customer ID.
+Single: Clicking a customer shows their orders. Clicking an order doesn't automatically show their customer details in a customer list (unless you filter the list separately).
+Both: Clicking a customer shows their orders, AND clicking an order automatically highlights or filters the customer in the customer list, and vice-versa. 
+
+
+
+
+
+
+
+
+
+
+DAX (Data Analysis Expressions) 
+
+Sum:
+Total Sales = SUM(Sales[Amount])
+
+SumX:
+Total Revenue = SUMX(Sales, Sales[Quantity] * Sales[Price])
+

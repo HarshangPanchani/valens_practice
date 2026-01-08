@@ -130,7 +130,7 @@ import pandas as pd
 # val.loc[val['a']<=5,'c']=None
 
 # print(val)
-# ths=len(val)*0.8
+# ths=len(val)*0.4
 # print(ths)
 # val2= val.dropna(thresh=ths,axis=1)
 # print(val2)

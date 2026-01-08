@@ -1,0 +1,81 @@
+= #"modify the test column1"{1} : to get the second row as  Record
+= #"Add new column"[Pulse] : to get perticular row  
+= #"Add new column"[Pulse]{2} : for perticular column's perticular row
+= #"Add new column"{2}[Pulse] : for perticular row's perticular column
+
+= #shared : for all the function and it's documentation
+
+let 
+firstseven= List.Contains({1..7},Date.Day([Date])),
+secondseven= List.Contains({8..14},Date.Day([Date])),
+thirdseven= List.Contains({15..21},Date.Day([Date])),
+comm= 
+  if firstseven then 0.1
+  else if secondseven then 0.07
+  else if thirdseven then 0.05
+  else 0.01
+in
+ comm
+
+ in the custom column to calculate the commition
+[
+ firstseven= List.Contains({1..7},Date.Day([Date])),
+secondseven= List.Contains({8..14},Date.Day([Date])),
+thirdseven= List.Contains({15..21},Date.Day([Date])),
+comm= 
+  if firstseven then 0.1
+  else if secondseven then 0.07
+  else if thirdseven then 0.05
+  else 0.01
+]
+  in custom column  to get the record
+
+
+--------------------------------------
+
+  let
+steps=
+
+[
+ firstseven= List.Contains({1..7},Date.Day([Date])),
+secondseven= List.Contains({8..14},Date.Day([Date])),
+thirdseven= List.Contains({15..21},Date.Day([Date])),
+comm= 
+  if firstseven then 0.1
+  else if secondseven then 0.07
+  else if thirdseven then 0.05
+  else 0.01
+]
+
+in if TurnOnDetails then steps else steps[comm]
+
+
+created a Parameter with manage parameter with options only true/false then changed the custom column code with above to change between record and commission
+
+
+Total sales = SUMX (financials, financials[Sale Price] * financials[Units Sold] )
+measure to calculate total sales by creating new measure
+
+
+
+Country Sagment = financials[Country] & "'s" & financials[Segment]
+
+Manufacturing Cost = IF(financials[Manufacturing Price]>100, "High","Low")
+calculated column by clicking new column
+
+
+Table = SUMMARIZE(financials,financials[Country],"Total Sales", SUM(financials[ Sales]), "Total Profit",SUM(financials[Profit]))
+
+after clicking the create table. write above DAX query to get new table. Calculated Table
+
+My Daily Update :
+(12/12/2025): 
+Few Modeling Concepts : 30 mins(star and snow flake,normalization)
+DAX functions(Aggregation Functions,Logical Functions,Math Functions) : 2 hours 
+Practice on custom column, measure, calculated table : 2 hours
+you tube tutorial https://youtu.be/5s8Ky5r43uI?si=griliUrxanfLd8gR(M language): 2 hours 
+
+Today:
+Revise the Power Bi course : 2 hour
+Practice on DAX query : 2 hour
+Start creating dashboards with sample data: 3 hours
